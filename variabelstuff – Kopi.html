@@ -27,8 +27,7 @@
     <br>
     <br>
 
-    <div id="divX" style="border: solid black 2px; width: 200px; height: 20px;" oninput="checkUserinput(this.value)"></div>
-
+    <div id="divX" style="border: solid black 2px; width: 200px;" onchange="checkUserinput(this.value)"> KODE:</div>
     <br>
 
     <div id="info">Trykk på tallene for å skrive inn kode</div>
@@ -39,16 +38,25 @@
         let userinput = "1234";
     let password = "1234";
 
-       
+        function tell() {
+            var tallB = 0;
+            var tekstB = 'TekstB ';
+
+            tallA++;
+            tallB++;
+            tekstA += '*';
+            tekstB += '*';
+
+            
+        }
         function tell(element) {
-            document.getElementById('divX').innerHTML += element.innerHTML;
-            console.log("")
+            document.getElementById('divX').innerHTML += `<divX> ${element.innerHTML}`;
+            //    document.getElementById('divX').innerHTML += `<divX> ${element.innerHTML}` + "-" ;
         }
 
         function checkUserinput(thisUserinput){
     userinput = thisUserinput;
     password += thisUserinput;
-
     if(userinput == "1234" || password == "1234" ){
 
         alert("du gjettet riktig!");
@@ -58,6 +66,9 @@
         alert("feil passord")
     }
 
+    if(true){
+
+    }
 }
 
 
