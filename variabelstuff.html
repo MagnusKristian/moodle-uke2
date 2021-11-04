@@ -27,29 +27,30 @@
     <br>
     <br>
 
-    <div id="divX" style="border: solid black 2px; width: 200px; height: 20px;" oninput="checkUserinput(this.value)"></div>
+    <div id="divX" style="border: solid black 2px; width: 200px; height: 20px;" onclick="tell(this)"></div>
 
     <br>
+
+    <!-- <button>click</button> -->
 
     <div id="info">Trykk på tallene for å skrive inn kode</div>
     
 
     <script>
         
-        let userinput = "1234";
+        let userinput = "";
     let password = "1234";
 
        
         function tell(element) {
             document.getElementById('divX').innerHTML += element.innerHTML;
-            console.log("")
-        }
+            userinput +=element.innerHTML;
+            
+       
+   
+    console.log('userinput= '+ userinput); 
 
-        function checkUserinput(thisUserinput){
-    userinput = thisUserinput;
-    password += thisUserinput;
-
-    if(userinput == "1234" || password == "1234" ){
+    if(userinput == password){
 
         alert("du gjettet riktig!");
 
