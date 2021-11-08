@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -10,18 +10,29 @@
     <button onclick="doClick()">Trykk her</button>
     Prøv også å reloade siden.
 
-    <div onload="lastebil">
-hei på deg
+    <div1 onload="">
+
     </div>
 
+    <div2>
+
+    </div>
+    
+
+    <img id="x" src="https://www.getacademy.no/assets/ansatt-bilder/Terje.jpg" alt="Terje" width="400" height="300">
+
     <script>
+        var en
         alert('Dette skjer når siden lastes');
 
         function doClick() {
-            alert('Dette skjer i funksjonen doClick');
-        }
-        function lastebil() {
-            document.getElementById('a').innerHTML = '' + new Date().toTimeString();
+            alert('function doClick');
+            //document.getElementById('a').innerHTML = '' + new Date().toTimeString();
+
+            function visTid (){
+                var en = document.getElementById('a').innerHTML = '' + new Date().toTimeString();
+            }
+            //document.getElementById('a').innerHTML = '' + new Date().toTimeString();
         }
     </script>
 </body>
