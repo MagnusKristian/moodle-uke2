@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>ferdighet5</title>
 </head>
 <body onload="lastinn()">
     <h1>Tiden det tar å laste inn siden VS Tiden det tar å laste inn siden+bilde</h1>
@@ -22,6 +22,9 @@
         function lastinnferdig() {
             document.getElementById('b').innerHTML = 'BODY+IMAGE:' + new Date().toTimeString();
         }
+        //nå tror jeg begge to kjører samtidig, fordi "The onload event occurs whenever the element has finished loading."?
+        //pga bildet må lastes ferdig på både body onload og img onload?
+        //fiks det før du sier deg ferdig.
     </script>
 </body>
 </html>
