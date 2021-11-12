@@ -5,26 +5,24 @@
     <meta charset="utf-8" />
     <title>ferdighet5</title>
 </head>
-<body onload="lastinn()">
+<body onload="lastinnferdig()">
     <h1>Tiden det tar å laste inn siden VS Tiden det tar å laste inn siden+bilde</h1>
 <hr>
 
     <div id="a">Siden:</div>
     <div id="b">Siden+bilde:</div>
-    <img id="x" onload="lastinnferdig()" src="https://www.getacademy.no/assets/ansatt-bilder/Terje.jpg" alt="Terje" >
+    <img id="x"  src="https://i.redd.it/o79iwxdll2w41.jpg" alt="bilde" >
 
     <script>
-        
+
         function lastinn () {
             document.getElementById('a').innerHTML = 'BODY:' + new Date().toTimeString();
         }
-
+        lastinn();
         function lastinnferdig() {
             document.getElementById('b').innerHTML = 'BODY+IMAGE:' + new Date().toTimeString();
         }
-        //nå tror jeg begge to kjører samtidig, fordi "The onload event occurs whenever the element has finished loading."?
-        //pga bildet må lastes ferdig på både body onload og img onload?
-        //fiks det før du sier deg ferdig.
+        
     </script>
 </body>
 </html>
