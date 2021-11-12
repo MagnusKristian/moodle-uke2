@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="lastinn()">
+    <h1>Tiden det tar å laste inn siden VS Tiden det tar å laste inn siden+bilde</h1>
+<hr>
+
+    <div id="a">Siden:</div>
+    <div id="b">Siden+bilde:</div>
+    <img id="x" onload="lastinnferdig()" src="https://www.getacademy.no/assets/ansatt-bilder/Terje.jpg" alt="Terje" >
+
+    <script>
+        
+        function lastinn () {
+            document.getElementById('a').innerHTML = 'BODY:' + new Date().toTimeString();
+        }
+
+        function lastinnferdig() {
+            document.getElementById('b').innerHTML = 'BODY+IMAGE:' + new Date().toTimeString();
+        }
+    </script>
+</body>
+</html>
