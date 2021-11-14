@@ -20,7 +20,8 @@
         var bredde = document.getElementById('bredde');
         var høyde = document.getElementById('høyde');
         var resultatHtmlDiv = document.getElementById('resultatHtml');
-
+        var arealet = bredde.value * høyde.value;
+        var omkretsen = 2 * bredde.value + 2 * høyde.value;
 
         visFrem();
         function visFrem() {
@@ -29,7 +30,9 @@
                 + 'width: ' + bredde.value + 'px;'
                 + 'height: ' + høyde.value + 'px;'
                 + '">' + '</div>';
-                resultatHtmlDiv.innerText = 'Bredde: ' + bredde.value + '... ' + 'høyde: ' + høyde.value;
+                resultatHtmlDiv.innerText = 'Bredde: ' + bredde.value + ' ... ' + 'Høyde: ' + høyde.value
+                + ' ... ' + 'Areal: ' + arealet + ' ... '+ 'Omkrets: ' + omkretsen
+                ;
         }
 
     </script>
