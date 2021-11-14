@@ -20,19 +20,16 @@
         var bredde = document.getElementById('bredde');
         var høyde = document.getElementById('høyde');
         var resultatHtmlDiv = document.getElementById('resultatHtml');
-        var innibredde = bredde.value
-        var innihøyde = høyde.value
 
 
         visFrem();
-
         function visFrem() {
             resultatDiv.innerHTML = '<div style="'
                 + 'background-color: ' + 'dodgerblue' + ';'
                 + 'width: ' + bredde.value + 'px;'
                 + 'height: ' + høyde.value + 'px;'
                 + '">' + '</div>';
-                resultatHtmlDiv.innerText = 'Bredde:' + innibredde + '... ' + 'høyde' + innihøyde;
+                resultatHtmlDiv.innerText = 'Bredde: ' + bredde.value + '... ' + 'høyde: ' + høyde.value;
         }
 
     </script>
