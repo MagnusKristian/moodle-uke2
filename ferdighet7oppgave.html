@@ -20,11 +20,12 @@
         var bredde = document.getElementById('bredde');
         var høyde = document.getElementById('høyde');
         var resultatHtmlDiv = document.getElementById('resultatHtml');
-        var arealet = bredde.value * høyde.value;
-        var omkretsen = 2 * bredde.value + 2 * høyde.value;
+        
 
         visFrem();
         function visFrem() {
+            var arealet = bredde.value * høyde.value;
+        var omkretsen = 2 * bredde.value + 2 * høyde.value;
             resultatDiv.innerHTML = '<div style="'
                 + 'background-color: ' + 'dodgerblue' + ';'
                 + 'width: ' + bredde.value + 'px;'
