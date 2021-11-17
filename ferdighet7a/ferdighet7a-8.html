@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <div id="resultat"></div>
+        <div id="resultatHtml"></div>
+
+    <script>
+        
+        var resultatDiv = document.getElementById('resultat');
+        
+        var resultatHtmlDiv = document.getElementById('resultatHtml');
+        
+
+        visFrem();
+        function visFrem() {
+            console.log();
+            var bredde = 100 + Math.floor(Math.random() * 1000);
+            var høyde = 100 + Math.floor(Math.random() * 1000);
+            var rando3 = 1 + Math.floor(Math.random() * 10);
+            resultatDiv.innerHTML = '<div style="'
+                + 'background-color: ' + 'darkred' + ';'
+                + 'width: ' + bredde + 'px;'
+                + 'height: ' + høyde + 'px;'
+               + 'border:'+ rando3 + 'px solid black;'
+                + '">' + '</div>';
+                resultatHtmlDiv.innerText = 'Bredde: ' + bredde + ' ... ' + 'Høyde: ' + høyde + ' ... ' + 'Border: ' + rando3
+
+                ;
+        }
+
+    </script>
+</body>
+</html>
