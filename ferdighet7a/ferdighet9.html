@@ -6,9 +6,28 @@
     <title></title>
     <style>
         .round {
-            border: 1px solid gray;
+            border: 2px solid black;
             border-radius: 5px;
         }
+        .lastebil {
+            background-color: chartreuse;
+        }
+        .vindu {
+        margin: 5%;
+        }
+        .baseball {
+        font-family: cursive;
+        font-style: normal;
+        }
+        .eple {
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+
+        }
+
+
     </style>
 </head>
 <body>
@@ -17,6 +36,9 @@
     <h2 id="overskrift">Overskrift</h2>
     <button onclick="doSomethingA(this)">A</button>
     <button onclick="doSomethingB(this)">B</button>
+    <button onclick="doSomethingC(this)">C</button>
+    <button onclick="doSomethingD(this)">D</button>
+    <button onclick="doSomethingE(this)">E</button>
 
     <script>
         var textInput = document.getElementById('text');
@@ -53,6 +75,42 @@
             clickedElement.classList.remove('round');
 
             textInput.value = "Trykket på knapp B";
+        }
+
+        function doSomethingC(clickedElement) {
+            textInput.style.backgroundColor = 'brown';
+            h2Element.style.backgroundColor = 'brown';
+            clickedElement.style.backgroundColor = 'brown';
+
+            textInput.classList.add('round');
+            h2Element.classList.add('round');
+            clickedElement.classList.add('round');
+
+            textInput.value = "Trykket på knapp C";
+        }
+
+        function doSomethingD(clickedElement) {
+            textInput.style.backgroundColor = 'green';
+            h2Element.style.backgroundColor = 'green';
+            clickedElement.style.backgroundColor = 'green';
+
+            textInput.classList.add('round');
+            h2Element.classList.add('round');
+            clickedElement.classList.add('round');
+
+            textInput.value = "Trykket på knapp D";
+        }
+
+        function doSomethingE(clickedElement) {
+            textInput.style.backgroundColor = 'pink';
+            h2Element.style.backgroundColor = 'pink';
+            clickedElement.style.backgroundColor = 'pink';
+
+            textInput.classList.add('round');
+            h2Element.classList.add('round');
+            clickedElement.classList.add('round');
+
+            textInput.value = "Trykket på knapp E";
         }
     </script>
 </body>
