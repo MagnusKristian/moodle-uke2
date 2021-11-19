@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .en{
+        background-color: red;
+    }
+    .to{
+        border: black 2px;
+        border-radius: 10px;
+    }
+    .tre{
+        font-size: large;
+    }
+    .fire{
+        font-style: italic;
+        font-family: Franklin Gothic Medium;
+    }
+    .fem{
+        color: chartreuse;
+    }
+
+</style>
+<body>
+    <div id="mainDiv"></div>
+    
+    <!-- prøv å sette det opp i MVC -->
+    <script>
+        //model
+        var mainDivShow = document.getElementById('mainDiv');
+        var isChecked = '';
+
+        //view
+        show()
+        function show() {
+            var html = `
+            <div id="Div1" onclick="gjørA">1</div>
+            <div id="Div2" onclick="gjørB">2</div>
+            <div id="Div3" onclick="gjørC">3</div>
+            <div id="Div4" onclick="gjørD">4</div>
+            <div id="Div5" onclick="gjørE">5</div>
+
+            <input id="check1" type="checkbox" onchange="toggleStyle()" />
+            <input id="check2" type="checkbox" onchange="toggleStyle()" />
+            <input id="check3" type="checkbox" onchange="toggleStyle()" />
+            <input id="check4" type="checkbox" onchange="toggleStyle()" />
+            <input id="check5" type="checkbox" onchange="toggleStyle()" />
+
+            `
+            mainDiv.innerHTML = html
+        }
+
+        function toggleEn() {
+            var isChecked = document.getElementById('check1').checked;
+            document.getElementById('Div1').classList.toggle('en', isChecked);
+        }
+
+        function toggleTo() {
+            var isChecked = document.getElementById('check').checked;
+            document.getElementById('Div2').classList.toggle('to', isChecked);
+        }
+
+        function toggleTre() {
+            var isChecked = document.getElementById('check').checked;
+            document.getElementById('Div3').classList.toggle('tre', isChecked);
+        }
+
+        function toggleFire() {
+            var isChecked = document.getElementById('check').checked;
+            document.getElementById('Div4').classList.toggle('fire', isChecked);
+        }
+
+        function toggleFem() {
+            var isChecked = document.getElementById('check').checked;
+            document.getElementById('Div5').classList.toggle('fem', isChecked);
+        }
+    </script>
+    
+</body>
+</html>
