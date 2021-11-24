@@ -1,27 +1,21 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title></title>
 </head>
-<body onload="nyfunc()">
+<body onload="testAll('onload')">
     <p>Ferdighet 2a - Alternative eventhandlere: onchange osv.</p>
-    <input type="text" onchange="nyfunc()" oninput="nyfunc()" />
-    <h3 onmouseover="nyfunc()" onmouseout="nyfunc()">Test test test</h3>
+    <input type="text" onchange="testAll('onchange')" oninput="testAll('oninput')" />
+    <h3 onmouseover="testAll('onmouseover')" onmouseout="testAll('onmouseout')">Test test test</h3>
     <h2 id="info"></h2>
 
     <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Mer informasjon her</a>
     <script>
-        function nyfunc(onload, onchange, oninput, onmouseover, onmouseout){
-        document.body.innerHTML += `
-        <h2 id="info"${onload}>onload <li>onload</li></h2>
-        <h2 id="info"${onchange}>onchange</h2>
-        <h2 id="info"${oninput}>oninput</h2>
-        <h2 id="info"${onmouseover}>onmouseover</h2>
-        <h2 id="info"${onmouseout}>onmouseout</h2>
-
-        `
+        function testAll(nameofeventhandlers ){
+            console.log(nameofeventhandlers);
+            
         }
 
         // function testOnLoad() {
@@ -46,9 +40,3 @@
     </script>
 </body>
 </html>
-
-function testAll(nameOfEventHandlers){
-    document.body.innerHTML += 
-    <h3>${nameOfEventHandlers}</h3>
-    ;
-}
