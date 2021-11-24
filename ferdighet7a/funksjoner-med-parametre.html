@@ -13,6 +13,9 @@
 
     <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Mer informasjon her</a>
     <script>
+        function altHer(){
+            document.body.innerHTML += `
+        }
         function testOnLoad() {
             document.getElementById('info').innerHTML += '<li>onload</li>';
         }
@@ -32,6 +35,8 @@
         function testOnMouseOut() {
             document.getElementById('info').innerHTML += '<li>onmouseout</li>';
         }
+        `;
+    }
     </script>
 </body>
 </html>
