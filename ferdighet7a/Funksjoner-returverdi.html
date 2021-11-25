@@ -63,6 +63,17 @@
         function tilfeldigTall(minimum, maksimum) {
             return minimum + Math.floor(Math.random() * (maksimum - minimum + 1));
         }
+
+        function tilfeldigBokstav() {
+                var tall = tilfeldigTall(0, 28);
+                if (tall < 10) return tall;
+                const charCodeA = 'a'.charCodeAt(0);
+                return String.fromCharCode(tall - 10 + charCodeA);
+                if (tall = 28) return 'å';
+                if (tall = 27) return 'ø';
+                if (tall = 26) return 'æ';
+                if (tall < 26) return tall + charCodeA;
+            }       
     </script>
 </body>
 </html>
